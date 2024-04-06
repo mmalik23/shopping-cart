@@ -88,5 +88,5 @@ Template: scala-sbt
 that the product name matches the name in the url (ignoring case)
 * I assume product name is unique and has the same casing. In this code `CornFlakes` and `cornflakes` will have distinct entries.
 * I handle price changes as another entry in the cart. If a products price has changed it will be a distinct entry
-* I assume that the JSON number for price will be formatted to two decimal places
+* I assume that the JSON number for price needs to be rounded up if the number of digits after the decimal place is > 2
 * When adding a product to the cart if the call to the external price service fails, we do not retry on any status code. We swallow the error and return the existing cart.
