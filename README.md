@@ -84,7 +84,7 @@ Template: scala-sbt
     
 ## Assumptions & Decisions
 
-* The value in the JSON for the field `title is 'Corn Flakes' for the `cornflakes` product. I am not coding for the possiblity that the product name has a space. I am sticking to the `README.md` where it mentiones
+* The value in the JSON for the field `title` is 'Corn Flakes' for the `cornflakes` product. I am not coding for the possiblity that the product name has a space. I am sticking to the `README.md` where it mentiones
 that the product name matches the name in the url (ignoring case)
 * I assume product name is unique and has the same casing. In this code `CornFlakes` and `cornflakes` will have distinct entries.
 * I handle price changes as another entry in the cart. If a products price has changed it will be a distinct entry
